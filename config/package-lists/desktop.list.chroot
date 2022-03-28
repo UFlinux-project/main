@@ -7,9 +7,7 @@ gnome-shell-extension-appindicator
 flatpak
 gnome-software-plugin-flatpak
 nautilus-font-manager
-nautilus-gtkhash
 nautilus-share
-nautilus-sendto
 nautilus-admin
 nautilus-hide
 seahorse-nautilus
@@ -31,7 +29,6 @@ remmina
 remmina-plugin-rdp  
 remmina-plugin-vnc  
 remmina-plugin-spice
-remmina-plugin-nx
 epiphany-browser 
 gnome-firmware
 apt-transport-https

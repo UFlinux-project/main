@@ -15,5 +15,5 @@ Pin: release n=bullseye-security
 Pin-Priority: 500
 
 Package: *
-Pin: release n=bullseye
+Pin: release n=bookworm
 Pin-Priority: 500
