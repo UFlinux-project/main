@@ -3,7 +3,7 @@ idle-delay='uint32 900'
 [org/gnome/desktop/interface]
 icon-theme='Papirus'
 [org/gnome/shell]
-enabled-extensions=['dash-to-panel@jderose9.github.com', 'ubuntu-appindicators@ubuntu.com', 'ding@rastersoft.com', 'arcmenu@arcmenu.com']
+enabled-extensions=['dash-to-panel@jderose9.github.com', 'ubuntu-appindicators@ubuntu.com', 'ding@rastersoft.com', 'arcmenu@arcmenu.com', 'sound-output-device-chooser@kgshank.net', 'volume-mixer@evermiss.net']
 [org/gnome/desktop/wm/preferences]
 button-layout='appmenu:minimize,maximize,close'
 [org/gnome/desktop/background]
