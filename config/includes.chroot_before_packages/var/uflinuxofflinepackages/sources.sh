@@ -39,6 +39,7 @@ sed 's/XKBMODEL=""/XKBMODEL="pc105"/g' /etc/default/keyboard
 apt-get autoremove uf-calamares-settings calamares -y
 flatpak update --assumeyes --noninteractive
 /usr/sbin/aa-enforce /etc/apparmor.d/*
+/usr/sbin/ufw enable
 rm -f /etc/apt/sources.list.d/uflinuxofflinepackages.list
 rm -f /etc/cron.d/uflinuxofflinepackages
 rm -rf /var/uflinuxofflinepackages
