@@ -46,9 +46,8 @@ gdebi
 gnome-nibbles
 network-manager-openvpn-gnome
 network-manager-pptp-gnome
-tlp
+power-profiles-daemon
 gufw
-tlpui
 hardinfo
 touchegg
 system-config-printer
