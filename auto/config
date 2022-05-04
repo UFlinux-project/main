@@ -18,7 +18,7 @@ lb config noauto \
 	--iso-preparer "UFlinux" \
 	--iso-publisher "UFlinux" \
 	--linux-flavours "xanmod1" \
-	--linux-packages "linux-image-5.10.104" \
+	--linux-packages "linux-image-5.15.36" \
 	--chroot-squashfs-compression-level 19 \
 	--chroot-squashfs-compression-type zstd \
 	--compression gzip \
