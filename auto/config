@@ -6,8 +6,8 @@ lb config noauto \
         --bootloaders syslinux \
         --distribution bullseye \
 	--archive-areas "main contrib non-free" \
-	--updates true \
-        --security true \
+	--updates false \
+        --security false \
 	--backports true \
 	--debian-installer live \
 	--debian-installer-gui false \
