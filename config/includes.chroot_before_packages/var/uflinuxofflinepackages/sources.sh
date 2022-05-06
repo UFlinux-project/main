@@ -17,6 +17,26 @@ deb http://deb.debian.org/debian/ bullseye-updates main contrib non-free
 deb http://deb.debian.org/debian bullseye-backports main contrib non-free
 #deb-src http://ftp.debian.org/debian/ bullseye-backports main contrib non-free
 " > /etc/apt/sources.list
+echo "Package: *
+Pin: origin "repo.uflinux.eu"
+Pin-Priority: 501
+
+Package: *
+Pin: release n=bullseye-backports
+Pin-Priority: 500
+
+Package: *
+Pin: release n=bullseye-updates
+Pin-Priority: 500
+
+Package: *
+Pin: release n=bullseye-security
+Pin-Priority: 500
+
+Package: *
+Pin: release n=bullseye
+Pin-Priority: 500" > /etc/apt/preferences.d/100uflinux
+
 echo 'GRUB_DEFAULT="saved"
 GRUB_DISABLE_RECOVERY="true"
 GRUB_DISABLE_SUBMENU="true"
