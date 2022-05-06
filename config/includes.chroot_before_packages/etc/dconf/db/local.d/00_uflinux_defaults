@@ -102,3 +102,5 @@ experimental-features=['scale-monitor-framebuffer']
 mpv-options='profile=gpu-hq hwdec=auto-safe demuxer-thread=yes demuxer-readahead-secs=180'
 [org/gnome/settings-daemon/plugins/xsettings]
 antialiasing='rgba'
+[org/gnome/nautilus/preferences]
+show-image-thumbnails='always'
