@@ -1,0 +1,2 @@
+apt-get install fprintd libpam-fprintd -y
+/usr/sbin/pam-auth-update --enable fprintd
