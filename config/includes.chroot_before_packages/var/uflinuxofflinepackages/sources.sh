@@ -19,7 +19,7 @@ deb http://deb.debian.org/debian bullseye-backports main contrib non-free
 " > /etc/apt/sources.list
 echo "Package: *
 Pin: origin "repo.uflinux.eu"
-Pin-Priority: 501
+Pin-Priority: 500
 
 Package: *
 Pin: release n=bullseye-backports
