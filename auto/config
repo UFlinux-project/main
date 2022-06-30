@@ -3,7 +3,7 @@
 set -e
 
 lb config noauto \
-        --bootloaders syslinux \
+        --bootloaders grub-pc \
         --distribution bullseye \
 	--archive-areas "main contrib non-free" \
 	--updates false \
