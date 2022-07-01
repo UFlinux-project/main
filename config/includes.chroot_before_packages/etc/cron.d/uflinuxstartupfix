@@ -1,0 +1,1 @@
+@reboot root apt-get install -f -y
