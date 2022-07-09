@@ -1,6 +1,6 @@
 systemd-oomd
 fonts-opendyslexic
-ttf-ubuntu-font-family
+fonts-ubuntu
 fonts-arphic-ukai
 fonts-arphic-uming
 fonts-ipafont-mincho
@@ -22,3 +22,4 @@ acpid
 gnome-session-canberra
 vulkan-tools
 efibootmgr
+power-profiles-daemon

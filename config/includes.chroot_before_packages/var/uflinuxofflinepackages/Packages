@@ -1,44 +1,15 @@
-Package: grub-common
-Source: grub2
-Version: 2.04-20
-Architecture: amd64
-Maintainer: GRUB Maintainers <pkg-grub-devel@alioth-lists.debian.net>
-Installed-Size: 17422
-Depends: libc6 (>= 2.28), libdevmapper1.02.1 (>= 2:1.02.36), libefiboot1 (>= 37), libefivar1 (>= 37), libfreetype6 (>= 2.2.1), libfuse2 (>= 2.8.4-1.4), liblzma5 (>= 5.1.1alpha+20120614), gettext-base
-Recommends: os-prober (>= 1.33)
-Suggests: multiboot-doc, grub-emu, mtools, xorriso (>= 0.5.6.pl00), desktop-base (>= 4.0.6), console-setup
-Conflicts: init-select
-Breaks: apport (<< 2.1.1), friendly-recovery (<< 0.2.13), lupin-support (<< 0.55), mdadm (<< 2.6.7-2)
-Replaces: grub-coreboot (<< 2.00-4), grub-efi (<< 1.99-1), grub-efi-amd64 (<< 2.00-4), grub-efi-ia32 (<< 2.00-4), grub-efi-ia64 (<< 2.00-4), grub-ieee1275 (<< 2.00-4), grub-linuxbios (<< 1.96+20080831-1), grub-pc (<< 2.00-4), grub-yeeloong (<< 2.00-4), init-select
-Filename: ./grub-common_2.04-20_amd64.deb
-Size: 2628756
-MD5sum: 362a98bf502bedd44afb1b47ffb3f7e1
-SHA1: f39f8bb0446b27728ef1a8bbe82ea73dd2469fe9
-SHA256: e753de303238eb33ec1850d4630c3f2db4de8b7b6b83180c1fc36606699aff44
-Section: admin
-Priority: optional
-Multi-Arch: foreign
-Homepage: https://www.gnu.org/software/grub/
-Description: GRand Unified Bootloader (common files)
- This package contains common files shared by the distinct flavours of GRUB.
- It is shared between GRUB Legacy and GRUB 2, although a number of files
- specific to GRUB 2 are here as long as they do not break GRUB Legacy.
- .
- grub-mkrescue needs the suggested packages mtools (for UEFI targets) and
- xorriso.
-
 Package: grub-efi
 Source: grub2
-Version: 2.04-20
+Version: 2.06-3
 Architecture: amd64
 Maintainer: GRUB Maintainers <pkg-grub-devel@alioth-lists.debian.net>
-Installed-Size: 16
-Depends: grub-common (= 2.04-20), grub-efi-amd64 (= 2.04-20)
-Filename: ./grub-efi_2.04-20_amd64.deb
-Size: 2536
-MD5sum: 22ecd8bbd8b6f2f7cd64184efa873667
-SHA1: 701f6383e6d9e8bc7dfac970bc14b9706e9658a3
-SHA256: 26ad30870ba428813d911fb062c46857c644d9f0a894eae75e6972b53c0f88c2
+Installed-Size: 12
+Depends: grub-common (= 2.06-3), grub-efi-amd64 (= 2.06-3)
+Filename: ./grub-efi_2.06-3_amd64.deb
+Size: 2372
+MD5sum: b9fd2589b38f9a70deee939594eeff4b
+SHA1: ac9c19597e984f582697e81d29a5d7ad2a225e99
+SHA256: 52aebe41e0dff20165426d3d02ebc81035159a22d5ed991597edd3f855274c83
 Section: admin
 Priority: optional
 Multi-Arch: foreign
@@ -49,18 +20,18 @@ Description: GRand Unified Bootloader, version 2 (dummy package)
 
 Package: grub-efi-amd64
 Source: grub2
-Version: 2.04-20
+Version: 2.06-3
 Architecture: amd64
 Maintainer: GRUB Maintainers <pkg-grub-devel@alioth-lists.debian.net>
-Installed-Size: 158
-Depends: debconf (>= 0.5) | debconf-2.0, grub-common (= 2.04-20), grub2-common (= 2.04-20), grub-efi-amd64-bin (= 2.04-20), ucf
+Installed-Size: 159
+Depends: debconf (>= 0.5) | debconf-2.0, grub-common (= 2.06-3), grub2-common (= 2.06-3), grub-efi-amd64-bin (= 2.06-3), ucf
 Conflicts: elilo, grub, grub-coreboot, grub-efi-ia32, grub-ieee1275, grub-legacy, grub-pc, grub-xen
-Replaces: grub, grub-common (<= 1.97~beta2-1), grub-coreboot, grub-efi-ia32, grub-ieee1275, grub-legacy, grub-pc, grub2 (<< 2.04-20)
-Filename: ./grub-efi-amd64_2.04-20_amd64.deb
-Size: 39828
-MD5sum: 9436a21e98277ad2f78954045c2e6207
-SHA1: 58853960c019cef127970014ffdaaac204dd4289
-SHA256: ac9ea063fac7feff2fcfe0f4d048d95e7035a7a1942b2d0fae79cc1b215ba200
+Replaces: grub, grub-common (<= 1.97~beta2-1), grub-coreboot, grub-efi-ia32, grub-ieee1275, grub-legacy, grub-pc, grub2 (<< 2.06-3)
+Filename: ./grub-efi-amd64_2.06-3_amd64.deb
+Size: 40236
+MD5sum: 726306adec1a9961c7f6a94f24f7462f
+SHA1: abc44a63cf0b70a62b43da9f3bb5fdcf618442b7
+SHA256: 0920bf976d280b929c8a1f4aedb41ef068fbcee1d8dc22310499061a36935f76
 Section: admin
 Priority: optional
 Multi-Arch: foreign
@@ -82,18 +53,18 @@ Description: GRand Unified Bootloader, version 2 (EFI-AMD64 version)
 
 Package: grub-efi-amd64-bin
 Source: grub2
-Version: 2.04-20
+Version: 2.06-3
 Architecture: amd64
 Maintainer: GRUB Maintainers <pkg-grub-devel@alioth-lists.debian.net>
-Installed-Size: 8624
-Depends: grub-common (= 2.04-20)
+Installed-Size: 8657
+Depends: grub-common (= 2.06-3)
 Recommends: grub-efi-amd64-signed, efibootmgr
-Replaces: grub-common (<= 1.97~beta2-1), grub-efi-amd64 (<< 1.99-1), grub2 (<< 2.04-20)
-Filename: ./grub-efi-amd64-bin_2.04-20_amd64.deb
-Size: 699112
-MD5sum: cdf1bee871f7c7ddf9c59e6bdcaf7702
-SHA1: 5ad23dbd211e89fbfb4cd38abd5731ab16d5a8f4
-SHA256: e6331448b25296171cd859888aad45dcbd57089377d0cf8ab30dbb67c3eb1bdd
+Replaces: grub-common (<= 1.97~beta2-1), grub-efi-amd64 (<< 1.99-1), grub2 (<< 2.06-3)
+Filename: ./grub-efi-amd64-bin_2.06-3_amd64.deb
+Size: 710864
+MD5sum: d542113f1a62ae43a15d06b110abe26b
+SHA1: 88c94e39f77e432978dc6da07c129f6ff51b87d3
+SHA256: 4d28eea3b6a832b74327be1baf666f8389098eed27a8f89c29d71b06379a1619
 Section: admin
 Priority: optional
 Multi-Arch: foreign
@@ -118,18 +89,18 @@ Efi-Vendor: debian
 
 Package: grub-pc
 Source: grub2
-Version: 2.04-20
+Version: 2.06-3
 Architecture: amd64
 Maintainer: GRUB Maintainers <pkg-grub-devel@alioth-lists.debian.net>
-Installed-Size: 533
-Depends: debconf (>= 0.5) | debconf-2.0, grub-common (= 2.04-20), grub2-common (= 2.04-20), grub-pc-bin (= 2.04-20), ucf
+Installed-Size: 534
+Depends: debconf (>= 0.5) | debconf-2.0, grub-common (= 2.06-3), grub2-common (= 2.06-3), grub-pc-bin (= 2.06-3), ucf
 Conflicts: grub (<< 0.97-54), grub-coreboot, grub-efi-amd64, grub-efi-ia32, grub-ieee1275, grub-legacy, grub-xen
-Replaces: grub, grub-common (<= 1.97~beta2-1), grub-coreboot, grub-efi-amd64, grub-efi-ia32, grub-ieee1275, grub-legacy, grub2 (<< 2.04-20)
-Filename: ./grub-pc_2.04-20_amd64.deb
-Size: 131056
-MD5sum: 8f743d319399169daef47fa79fb04750
-SHA1: a95a895f59ecbf475440f9a118852bde90f0ddc1
-SHA256: 371b4d5e9d50549eafbbfd17ab878469e7b36f772b57f844e0e88a3428d0b7b6
+Replaces: grub, grub-common (<= 1.97~beta2-1), grub-coreboot, grub-efi-amd64, grub-efi-ia32, grub-ieee1275, grub-legacy, grub2 (<< 2.06-3)
+Filename: ./grub-pc_2.06-3_amd64.deb
+Size: 131392
+MD5sum: b6b30132d1c6342b394e94c8f2b2f87b
+SHA1: 0d35c7183ea2d31cf4c24d7e132f122c9adcea2e
+SHA256: 94075ac361d0d23e0685dcdf44c95082297b82890f08372293fcb5fd235d6295
 Section: admin
 Priority: optional
 Multi-Arch: foreign
@@ -154,18 +125,18 @@ Description: GRand Unified Bootloader, version 2 (PC/BIOS version)
 
 Package: grub-pc-bin
 Source: grub2
-Version: 2.04-20
+Version: 2.06-3
 Architecture: amd64
 Maintainer: GRUB Maintainers <pkg-grub-devel@alioth-lists.debian.net>
-Installed-Size: 3060
-Depends: libc6 (>= 2.28), libdevmapper1.02.1 (>= 2:1.02.36), grub-common (= 2.04-20)
+Installed-Size: 3100
+Depends: libc6 (>= 2.33), libdevmapper1.02.1 (>= 2:1.02.36), grub-common (= 2.06-3)
 Suggests: desktop-base (>= 4.0.6)
-Replaces: grub-common (<= 1.97~beta2-1), grub-pc (<< 1.99-1), grub2 (<< 2.04-20)
-Filename: ./grub-pc-bin_2.04-20_amd64.deb
-Size: 970824
-MD5sum: f9aa6f79f3cb86759adc67d7044f975c
-SHA1: bda9542db0ca80c2a7f59003de588714731e6b29
-SHA256: 2bafee7ef0229b6eb494d8c88987e403d5637727f2ba9e47c37c0bbe8d68e9de
+Replaces: grub-common (<= 1.97~beta2-1), grub-pc (<< 1.99-1), grub2 (<< 2.06-3)
+Filename: ./grub-pc-bin_2.06-3_amd64.deb
+Size: 990700
+MD5sum: 87ef6d4fc4b6566daa4e9ad5625fdb1a
+SHA1: 4daf152274a839d9a603a0d9de90da633ed334cb
+SHA256: c3acba6e1745c8350291f05eb720cd557d1f8dda5108c66cfc65e57622fb422e
 Section: admin
 Priority: optional
 Multi-Arch: foreign
@@ -192,19 +163,19 @@ Description: GRand Unified Bootloader, version 2 (PC/BIOS modules)
 
 Package: grub2-common
 Source: grub2
-Version: 2.04-20
+Version: 2.06-3
 Architecture: amd64
 Maintainer: GRUB Maintainers <pkg-grub-devel@alioth-lists.debian.net>
-Installed-Size: 1315
-Depends: grub-common (= 2.04-20), dpkg (>= 1.15.4) | install-info, libc6 (>= 2.28), libdevmapper1.02.1 (>= 2:1.02.36), libefiboot1 (>= 37), libefivar1 (>= 37), liblzma5 (>= 5.1.1alpha+20120614)
+Installed-Size: 1344
+Depends: grub-common (= 2.06-3), dpkg (>= 1.15.4) | install-info, libc6 (>= 2.33), libdevmapper1.02.1 (>= 2:1.02.36), libefiboot1 (>= 37), libefivar1 (>= 37), liblzma5 (>= 5.1.1alpha+20120614)
 Conflicts: grub-legacy
 Breaks: grub (<< 0.97-54), grub-cloud-amd64 (<< 0.0.4), grub-coreboot (<< 2.02+dfsg1-7), grub-doc (<< 0.97-32), grub-efi-amd64 (<< 2.02+dfsg1-7), grub-efi-arm (<< 2.02+dfsg1-7), grub-efi-arm64 (<< 2.02+dfsg1-7), grub-efi-ia32 (<< 2.02+dfsg1-7), grub-efi-ia64 (<< 2.02+dfsg1-7), grub-ieee1275 (<< 2.02+dfsg1-7), grub-legacy-doc (<< 0.97-59), grub-pc (<< 2.02+dfsg1-7), grub-uboot (<< 2.02+dfsg1-7), grub-xen (<< 2.02+dfsg1-7), grub-yeeloong (<< 2.02+dfsg1-7), shim (<< 0.9+1474479173.6c180c6-0ubuntu1~)
 Replaces: grub, grub-cloud-amd64 (<< 0.0.4), grub-common (<< 1.99-1), grub-coreboot (<< 2.02+dfsg1-7), grub-doc (<< 0.97-32), grub-efi-amd64 (<< 2.02+dfsg1-7), grub-efi-arm (<< 2.02+dfsg1-7), grub-efi-arm64 (<< 2.02+dfsg1-7), grub-efi-ia32 (<< 2.02+dfsg1-7), grub-efi-ia64 (<< 2.02+dfsg1-7), grub-ieee1275 (<< 2.02+dfsg1-7), grub-legacy, grub-legacy-doc (<< 0.97-59), grub-pc (<< 2.02+dfsg1-7), grub-uboot (<< 2.02+dfsg1-7), grub-xen (<< 2.02+dfsg1-7), grub-yeeloong (<< 2.02+dfsg1-7)
-Filename: ./grub2-common_2.04-20_amd64.deb
-Size: 597152
-MD5sum: af9b29c5646ea9f98e03a3d248b6b561
-SHA1: 388fe520a73e51774a75948f942b8c6cf2dbb7cf
-SHA256: 24d423b38b00ae80b8efb016f966e18cf844f1bbec6611ac46e5d4d3d5e75b63
+Filename: ./grub2-common_2.06-3_amd64.deb
+Size: 609316
+MD5sum: ba55341a45ae7a1786ea25c663875bac
+SHA1: ddfc602a895fe003764202720ccbcf455a5d161c
+SHA256: fb31e1ca912bc01c996a4dadac26b80026eb7fd849bac683a5ece1567b3948bc
 Section: admin
 Priority: optional
 Multi-Arch: foreign
@@ -213,3 +184,4 @@ Description: GRand Unified Bootloader (common files for version 2)
  This package contains common files shared by the distinct flavours of GRUB.
  The files in this package are specific to GRUB 2, and would break GRUB
  Legacy if installed on the same system.
+

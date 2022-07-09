@@ -5,36 +5,26 @@ then
 else
 echo "Live Mode was not detected, assuming this is first boot"
 echo "
-deb http://deb.debian.org/debian/ bullseye main contrib non-free
-#deb-src http://deb.debian.org/debian/ bullseye main contrib non-free
-
-deb http://deb.debian.org/debian-security/ bullseye-security main contrib non-free
-#deb-src http://security.debian.org/ bullseye-security main contrib non-free
-
-deb http://deb.debian.org/debian/ bullseye-updates main contrib non-free
-#deb-src http://ftp.debian.org/debian/ bullseye-updates main contrib non-free
-
-deb http://deb.debian.org/debian bullseye-backports main contrib non-free
-#deb-src http://ftp.debian.org/debian/ bullseye-backports main contrib non-free
+deb http://deb.debian.org/debian/ bookworm main contrib non-free
 " > /etc/apt/sources.list
 echo "Package: *
 Pin: origin "repo.uflinux.eu"
 Pin-Priority: 500
 
 Package: *
-Pin: release n=bullseye-backports
+Pin: release n=bookworm-backports
 Pin-Priority: 500
 
 Package: *
-Pin: release n=bullseye-updates
+Pin: release n=bookworm-updates
 Pin-Priority: 500
 
 Package: *
-Pin: release n=bullseye-security
+Pin: release n=bookworm-security
 Pin-Priority: 500
 
 Package: *
-Pin: release n=bullseye
+Pin: release n=bookworm
 Pin-Priority: 500" > /etc/apt/preferences.d/100uflinux
 
 echo 'GRUB_DEFAULT="saved"
