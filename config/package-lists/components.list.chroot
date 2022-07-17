@@ -1,4 +1,5 @@
 systemd-oomd
+systemd-timesyncd
 fonts-opendyslexic
 ttf-ubuntu-font-family
 fonts-arphic-ukai
