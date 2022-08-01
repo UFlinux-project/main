@@ -1,4 +1,5 @@
 #!/bin/zsh
+ln -rsf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
 if [ $(hostname) = "uflinux-live" ]
 then
 	echo "Live Mode detected, script wont be executed"
