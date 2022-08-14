@@ -1,0 +1,1 @@
+echo "FONTCONFIG_PATH=/etc/fonts" >> /etc/environment
