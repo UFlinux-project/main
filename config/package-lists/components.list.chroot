@@ -1,7 +1,9 @@
 systemd-oomd
 systemd-timesyncd
 fonts-opendyslexic
-ttf-ubuntu-font-family
+fonts-ubuntu
+power-profiles-daemon
+nala
 fonts-arphic-ukai
 fonts-arphic-uming
 fonts-ipafont-mincho

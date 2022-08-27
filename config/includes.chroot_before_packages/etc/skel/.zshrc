@@ -10,3 +10,4 @@ compinit
 eval "$(/usr/local/bin/starship init zsh)"
 alias apt-get="sudo apt-get"
 alias apt="sudo apt"
+alias nala="sudo nala"

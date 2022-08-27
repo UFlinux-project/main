@@ -4,11 +4,11 @@ set -e
 
 lb config noauto \
         --bootloaders syslinux \
-        --distribution bullseye \
+        --distribution sid \
 	--archive-areas "main contrib non-free" \
 	--updates false \
         --security false \
-	--backports true \
+	--backports false \
 	--debian-installer live \
 	--debian-installer-gui false \
         --iso-volume UFlinux \
@@ -18,7 +18,7 @@ lb config noauto \
 	--iso-preparer "UFlinux" \
 	--iso-publisher "UFlinux" \
 	--linux-flavours "xanmod1" \
-	--linux-packages "linux-image-5.18.14" \
+	--linux-packages "linux-image-5.19.4" \
 	--chroot-squashfs-compression-level 19 \
 	--chroot-squashfs-compression-type zstd \
 	--compression gzip \

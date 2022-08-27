@@ -8,9 +8,7 @@ gnome-shell-extension-appindicator
 flatpak
 gnome-software-plugin-flatpak
 nautilus-font-manager
-nautilus-gtkhash
 nautilus-share
-nautilus-sendto
 nautilus-admin
 seahorse-nautilus
 samba
@@ -23,15 +21,8 @@ rar
 unrar
 zstd
 yt-dlp
-celluloid
 libavif-gdk-pixbuf
-heif-gdk-pixbuf  
-lollypop
-remmina 
-remmina-plugin-rdp  
-remmina-plugin-vnc  
-remmina-plugin-spice
-remmina-plugin-nx
+heif-gdk-pixbuf
 epiphany-browser 
 gnome-firmware
 apt-transport-https
@@ -46,7 +37,6 @@ gdebi
 gnome-nibbles
 network-manager-openvpn-gnome
 network-manager-pptp-gnome
-tlp
 gufw
 hardinfo
 touchegg

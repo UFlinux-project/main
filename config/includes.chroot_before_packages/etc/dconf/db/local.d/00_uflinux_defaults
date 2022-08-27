@@ -1,9 +1,13 @@
+
+
 [org/gnome/desktop/session]
 idle-delay='uint32 900'
 [org/gnome/desktop/interface]
 icon-theme='Papirus'
+[org/gnome/desktop/interface]
+gtk-theme='adw-gtk3'
 [org/gnome/shell]
-enabled-extensions=['dash-to-panel@jderose9.github.com', 'ubuntu-appindicators@ubuntu.com', 'ding@rastersoft.com', 'arcmenu@arcmenu.com', 'sound-output-device-chooser@kgshank.net', 'volume-mixer@evermiss.net']
+enabled-extensions=['dash-to-panel@jderose9.github.com', 'ubuntu-appindicators@ubuntu.com', 'ding@rastersoft.com', 'arcmenu@arcmenu.com', 'avatar@pawel.swiszcz.com', 'just-perfection-desktop@just-perfection']
 [org/gnome/desktop/wm/preferences]
 button-layout='appmenu:minimize,maximize,close'
 [org/gnome/desktop/background]
@@ -44,6 +48,8 @@ scroll-panel-action='NOTHING'
 scroll-icon-action='NOTHING'
 [org/gnome/shell/extensions/dash-to-panel]
 multi-monitors=false
+[org/gnome/shell/extensions/dash-to-panel]
+hot-keys=true
 [org/gnome/desktop/interface]
 font-name='Ubuntu 11'
 [org/gnome/desktop/interface]
@@ -83,7 +89,7 @@ disable-menu-button-active-indicator=true
 [org/gnome/shell/extensions/arcmenu]
 disable-scrollview-fade-effect=true
 [org/gnome/shell/extensions/arcmenu]
-power-options=[(1, true), (2, true), (3, true), (5, false), (0, false), (4, false), (6, false)]
+power-options=[(1, true), (2, true), (3, true), (5, false), (0, true), (4, true), (6, false)]
 [org/gnome/shell/extensions/arcmenu]
 disable-recently-installed-apps=true
 [org/gnome/shell/extensions/arcmenu]
@@ -91,9 +97,17 @@ enable-large-icons=true
 [org/gnome/shell/extensions/arcmenu]
 remove-menu-arrow=true
 [org/gnome/shell/extensions/arcmenu]
-pinned-app-list=['Web', '', 'org.chromium.Chromium.desktop', 'Files', '', 'org.gnome.Nautilus.desktop', 'Software', '', 'org.gnome.Software.desktop', 'LibreOffice', '', 'org.libreoffice.LibreOffice.desktop', 'Calculator', '', 'org.gnome.Calculator.desktop', 'Email', '', 'org.gnome.Evolution.desktop', 'UFlinux Helper', '', 'ufhelper.desktop', 'Nastavení', '', 'gnome-control-center.desktop', 'Run Windows software', '', 'com.usebottles.bottles.desktop']
+pinned-app-list=['Web', '', 'org.chromium.Chromium.desktop', 'Files', '', 'org.gnome.Nautilus.desktop', 'Software', '', 'org.gnome.Software.desktop', 'LibreOffice', '', 'org.libreoffice.LibreOffice.desktop', 'Calculator', '', 'org.gnome.Calculator.desktop', 'Email', '', 'org.gnome.Evolution.desktop', 'UFlinux Helper', '', 'ufhelper.desktop', 'Bottles', '', 'com.usebottles.bottles.desktop']
+[org/gnome/shell/extensions/arcmenu]
+directory-shortcuts-list=[['Home', 'user-home-symbolic', 'ArcMenu_Home'], ['Documents', '. GThemedIcon folder-documents-symbolic folder-symbolic folder-documents folder', 'ArcMenu_Documents'], ['Downloads', '. GThemedIcon folder-download-symbolic folder-symbolic folder-download folder', 'ArcMenu_Downloads'], ['Music', '. GThemedIcon folder-music-symbolic folder-symbolic folder-music folder', 'ArcMenu_Music'], ['Pictures', '. GThemedIcon folder-pictures-symbolic folder-symbolic folder-pictures folder', 'ArcMenu_Pictures'], ['Videos', '. GThemedIcon folder-videos-symbolic folder-symbolic folder-videos folder', 'ArcMenu_Videos'], ['Computer', 'drive-harddisk-symbolic', 'ArcMenu_Computer'], ['Network', 'network-workgroup-symbolic', 'ArcMenu_Network']]
+[org/gnome/shell/extensions/arcmenu]
+application-shortcuts-list=[['Software', 'org.gnome.Software', 'ArcMenu_Software'], ['Settings', '', 'org.gnome.Settings.desktop'], ['Terminal', 'utilities-terminal-symbolic', 'org.gnome.Terminal.desktop'], ['UFlinux Helper', '', 'ufhelper.desktop'], ['Text Editor', '', 'org.gnome.TextEditor.desktop'], ['System Monitoring Center', '', 'com.github.hakand34.system-monitoring-center.desktop']]
+[org/gnome/shell/extensions/arcmenu]
+disable-tooltips=true
 [org/gnome/shell/extensions/arcmenu]
 menu-layout='Windows'
+[org/gnome/shell/extensions/arcmenu]
+menu-hotkey='Super_L'
 [org/gnome/settings-daemon/plugins/power]
 sleep-inactive-ac-type='nothing'
 [org/gnome/mutter]
@@ -102,5 +116,31 @@ experimental-features=['scale-monitor-framebuffer']
 mpv-options='profile=gpu-hq hwdec=auto-safe demuxer-thread=yes demuxer-readahead-secs=180'
 [org/gnome/settings-daemon/plugins/xsettings]
 antialiasing='rgba'
+[org/gnome/desktop/interface]
+font-antialiasing='rgba'
 [org/gnome/nautilus/preferences]
 show-image-thumbnails='always'
+[org/gnome/shell/extensions/avatar]
+horizontal-mode=false
+[org/gnome/shell/extensions/avatar]
+avatar-shadow=false
+[org/gnome/shell/extensions/avatar]
+avatar-shadow-user-name=false
+[org/gnome/shell/extensions/avatar]
+show-buttons=false
+[org/gnome/shell/extensions/avatar]
+dnd-use-icon=false
+[org/gnome/shell/extensions/avatar]
+show-top-image=false
+[org/gnome/shell/extensions/avatar]
+name-style-dark=false
+[org/gnome/shell/extensions/avatar]
+set-custom-panel-menu-width=400
+[org/gnome/shell/extensions/just-perfection]
+notification-banner-position=5
+[org/gnome/shell/extensions/just-perfection]
+startup-status=0
+[org/gnome/shell/extensions/just-perfection]
+window-demands-attention-focus=true
+[org/gnome/shell/extensions/ding]
+show-network-volumes=true

@@ -3,17 +3,5 @@ Pin: origin "repo.uflinux.eu"
 Pin-Priority: 500
 
 Package: *
-Pin: release n=bullseye-backports
-Pin-Priority: 500
-
-Package: *
-Pin: release n=bullseye-updates
-Pin-Priority: 500
-
-Package: *
-Pin: release n=bullseye-security
-Pin-Priority: 500
-
-Package: *
-Pin: release n=bullseye
+Pin: release n=sid
 Pin-Priority: 500
