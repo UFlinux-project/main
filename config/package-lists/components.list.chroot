@@ -1,5 +1,6 @@
 systemd-oomd
 systemd-timesyncd
+systemd-resolved
 fonts-opendyslexic
 fonts-ubuntu
 power-profiles-daemon
@@ -26,3 +27,5 @@ gnome-session-canberra
 vulkan-tools
 efibootmgr
 dbus-broker
+webp-pixbuf-loader
+heif-thumbnailer

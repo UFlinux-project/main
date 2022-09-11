@@ -3,7 +3,7 @@
 set -e
 
 lb config noauto \
-        --bootloaders syslinux \
+        --bootloaders syslinux, grub-efi \
         --distribution sid \
 	--archive-areas "main contrib non-free" \
 	--updates false \

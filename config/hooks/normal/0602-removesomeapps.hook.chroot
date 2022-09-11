@@ -1,2 +1,2 @@
-apt autoremove gnome-system-monitor gnome-games evolution totem gnome-music rhythmbox firefox-esr shotwell termit libreoffice* exim4-daemon-light transmission-gtk gedit -y
+apt autoremove gnome-system-monitor gnome-games evolution totem gnome-music rhythmbox firefox-esr shotwell termit libreoffice* exim4-daemon-light transmission-gtk gedit gnome-terminal -y
 rm /usr/share/applications/org.gnome.Extensions.desktop

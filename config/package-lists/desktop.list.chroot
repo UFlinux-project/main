@@ -7,7 +7,6 @@ neovim
 gnome-shell-extension-appindicator
 flatpak
 gnome-software-plugin-flatpak
-nautilus-font-manager
 nautilus-share
 nautilus-admin
 seahorse-nautilus
@@ -48,3 +47,4 @@ system-monitoring-center
 f3d
 brasero
 pavucontrol
+gnome-console
