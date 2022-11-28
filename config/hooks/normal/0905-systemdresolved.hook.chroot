@@ -1,2 +1,3 @@
+apt-get install -y systemd-resolved
 ln -rsf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
 systemctl enable systemd-resolved.service

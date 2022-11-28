@@ -5,11 +5,11 @@ papirus-icon-theme
 task-gnome-desktop
 neovim
 gnome-shell-extension-appindicator
+gnome-shell-extension-bluetooth-quick-connect
 flatpak
 gnome-software-plugin-flatpak
 nautilus-share
 nautilus-admin
-seahorse-nautilus
 samba
 hplip
 printer-driver-all
@@ -36,14 +36,11 @@ gdebi
 gnome-nibbles
 network-manager-openvpn-gnome
 network-manager-pptp-gnome
-gufw
 hardinfo
 touchegg
 system-config-printer
 libcanberra-gtk-module
 libcanberra-gtk3-module
-hypnotix
-system-monitoring-center
 f3d
 brasero
 pavucontrol

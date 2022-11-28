@@ -7,7 +7,7 @@ icon-theme='Papirus'
 [org/gnome/desktop/interface]
 gtk-theme='adw-gtk3'
 [org/gnome/shell]
-enabled-extensions=['dash-to-panel@jderose9.github.com', 'ubuntu-appindicators@ubuntu.com', 'ding@rastersoft.com', 'arcmenu@arcmenu.com', 'avatar@pawel.swiszcz.com', 'just-perfection-desktop@just-perfection']
+enabled-extensions=['dash-to-panel@jderose9.github.com', 'ubuntu-appindicators@ubuntu.com', 'ding@rastersoft.com', 'arcmenu@arcmenu.com', 'avatar@pawel.swiszcz.com', 'just-perfection-desktop@just-perfection', 'bluetooth-quick-connect@bjarosze.gmail.com', 'quick-settings-tweaks@qwreey']
 [org/gnome/desktop/wm/preferences]
 button-layout='appmenu:minimize,maximize,close'
 [org/gnome/desktop/background]
@@ -50,6 +50,14 @@ scroll-icon-action='NOTHING'
 multi-monitors=false
 [org/gnome/shell/extensions/dash-to-panel]
 hot-keys=true
+[org/gnome/shell/extensions/dash-to-panel]
+trans-use-custom-opacity=true
+[org/gnome/shell/extensions/dash-to-panel]
+trans-panel-opacity=0.5
+[org/gnome/shell/extensions/dash-to-panel]
+trans-use-dynamic-opacity=true
+[org/gnome/shell/extensions/dash-to-panel]
+trans-dynamic-anim-target=1.0
 [org/gnome/desktop/interface]
 font-name='Ubuntu 11'
 [org/gnome/desktop/interface]
@@ -144,3 +152,5 @@ startup-status=0
 window-demands-attention-focus=true
 [org/gnome/shell/extensions/ding]
 show-network-volumes=true
+[org/gnome/shell/extensions/bluetooth-quick-connect]
+show-battery-value-on=true

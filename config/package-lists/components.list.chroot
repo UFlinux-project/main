@@ -1,6 +1,5 @@
 systemd-oomd
 systemd-timesyncd
-systemd-resolved
 fonts-opendyslexic
 fonts-ubuntu
 power-profiles-daemon
@@ -29,3 +28,4 @@ efibootmgr
 dbus-broker
 webp-pixbuf-loader
 heif-thumbnailer
+bluez
